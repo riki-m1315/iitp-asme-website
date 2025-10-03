@@ -1347,7 +1347,27 @@ a.no-link {
 @media (max-width: 768px) {
     .faculty {
         padding-bottom: 24px;  /* slightly smaller on small screens */
+        margin-bottom: 1.23rem;
+    }
+}
+@media (max-width: 680px) {
+    :root { --faculty-img-size: 170px; }
+    .faculty-grid { grid-template-columns: repeat(1, 1fr); } 
+    .faculty {
+        padding-bottom: 24px;  /* slightly smaller on small screens */
         margin-bottom: 1.25rem;
+    }
+}
+@media (max-width: 400px) {
+    .faculty-grid-item h1 { font-size: 1rem; font-weight: 800; }
+    .faculty-grid-item h2 { font-size: 0.8rem; font-weight: 500; }
+    .faculty-grid-item h3 { font-size: 0.8rem; font-weight: 500; }
+    .faculty-grid-item h4 { font-size: 0.8rem; font-weight: 500; }
+    :root { --faculty-img-size: 140px; }
+    .faculty-grid { grid-template-columns: repeat(1, 1fr); } 
+    .faculty {
+        padding-bottom: 12px;  /* slightly smaller on small screens */
+        margin-bottom: 1rem;
     }
 }
 /*FACULTY END*/
