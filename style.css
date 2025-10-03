@@ -194,6 +194,22 @@
     color: rgb(150, 204, 247);
 }
 /* Media Queries for responsiveness */
+@media screen and (min-width: 1680px) {
+  /* Constrain the center text so logos don't overlap it */
+  .above-text {
+    flex: 0 1 100%;      /* take ~60% width in the center */
+    max-width: 1200px;   /* optional: prevent very wide text blocks */
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1445px) and (max-width: 1680px) {
+  /* Constrain the center text so logos don't overlap it */
+  .above-text {
+    flex: 0 1 80%;      /* take ~60% width in the center */
+    max-width: 800px;   /* optional: prevent very wide text blocks */
+    text-align: center;
+  }
+}
 @media screen and (max-width: 1445px) {
     .above-logo-1 img {
         max-width: 8rem;
@@ -216,7 +232,7 @@
         font-size: 1rem;
     }
 }
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1130px) {
     .above-logo-1 img {
         max-width: 8rem;
         max-height: auto;
